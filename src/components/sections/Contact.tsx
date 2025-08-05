@@ -193,25 +193,25 @@ const Contact = () => {
             role="heading"
             aria-level={2}
           >
-            Get In Touch
+            ¿Trabajemos juntos?
           </SectionTitle>
           <ContactContent role="article">
             <ContactText 
               variants={itemVariants}
               role="paragraph"
             >
-              I'm always interested in hearing about new projects and opportunities.
-              Whether you have a question or just want to say hi, feel free to reach out!
+              Estoy siempre interesado en escuchar sobre nuevos proyectos y oportunidades.
+              Si tienes una pregunta o simplemente quieres saludar, ¡no dudes en ponerte en contacto conmigo!
             </ContactText>
             <ContactEmail 
-              href="mailto:your.email@example.com"
+              href="mailto:alexanderubilar@gmail.com"
               variants={itemVariants}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              aria-label="Send me an email at your.email@example.com"
+              aria-label="Puedes escribir a alexanderubilar@gmail.com"
             >
               <FaEnvelope aria-hidden="true" />
-              <span>your.email@example.com</span>
+              <span>alexanderubilar@gmail.com</span>
             </ContactEmail>
             <SocialLinks 
               variants={itemVariants}
@@ -219,34 +219,34 @@ const Contact = () => {
               aria-label="Social media links"
             >
               <SocialLink 
-                href="https://github.com"
+                href="https://github.com/alectrlsuprcl"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ y: -5 }}
                 role="listitem"
-                aria-label="Visit my GitHub profile"
+                aria-label="Visita mi perfil de GitHub"
               >
                 <FaGithub aria-hidden="true" />
                 <span className="sr-only">GitHub</span>
               </SocialLink>
               <SocialLink 
-                href="https://linkedin.com"
+                href="https://cl.linkedin.com/in/alexander-rubilar"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ y: -5 }}
                 role="listitem"
-                aria-label="Connect with me on LinkedIn"
+                aria-label="Conéctate conmigo en LinkedIn"
               >
                 <FaLinkedin aria-hidden="true" />
                 <span className="sr-only">LinkedIn</span>
               </SocialLink>
               <SocialLink 
-                href="https://twitter.com"
+                href="https://twitter.com/alectrlsuprcl"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ y: -5 }}
                 role="listitem"
-                aria-label="Follow me on Twitter"
+                aria-label="Sígueme en Twitter"
               >
                 <FaTwitter aria-hidden="true" />
                 <span className="sr-only">Twitter</span>

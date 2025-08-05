@@ -178,17 +178,17 @@ const ProjectLinks = styled.div`
 const projects = [
   {
     id: 1,
-    title: "Project One",
-    description: "A full-stack web application with real-time features and modern UI/UX design.",
+    title: "Proyecto: Weather Mini App",
+    description: "Una aplicación simple que permite saber el clima en la ciudad que quieras",
     image: "https://via.placeholder.com/400x200",
-    techStack: ["React", "Node.js", "MongoDB", "Socket.IO"],
+    techStack: ["React", "Node.js", "API Open Weather"],
     githubUrl: "https://github.com",
     liveUrl: "https://example.com",
   },
   {
     id: 2,
-    title: "Project Two",
-    description: "Mobile-first e-commerce platform with seamless payment integration.",
+    title: "Proyecto: Cuanto falta pal' 18",
+    description: "Plataforma que te dice cuantos días faltan para comerte un choripan y beber terremoto",
     image: "https://via.placeholder.com/400x200",
     techStack: ["Next.js", "TypeScript", "Stripe", "Tailwind"],
     githubUrl: "https://github.com",
@@ -229,7 +229,7 @@ const Projects = () => {
           role="heading"
           aria-level={2}
         >
-          Featured Projects
+          Proyectos Recientes
         </SectionTitle>
         <motion.div
           variants={containerVariants}

@@ -216,7 +216,7 @@ const Skills = () => {
         role="heading"
         aria-level={2}
       >
-        Skills & Expertise
+        Skills & Experiencia
       </SectionTitle>
       <motion.div
         variants={containerVariants}

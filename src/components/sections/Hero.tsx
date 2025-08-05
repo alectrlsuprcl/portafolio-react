@@ -28,6 +28,15 @@ const HeroSection = styled.section`
       width: 90%;
     }
   }
+
+  // Ajuste para mobile
+  @media (max-width: ${theme.breakpoints.md}) {
+    justify-content: center;
+    .container {
+      width: 100%;
+      padding: 0 0.5rem;
+    }
+  }
 `;
 
 const HeroContent = styled.div`
@@ -43,6 +52,12 @@ const HeroContent = styled.div`
 
   @media (min-width: ${theme.breakpoints.md}) {
     padding: ${theme.spacing.xl};
+  }
+
+  // Ajuste para mobile
+  @media (max-width: ${theme.breakpoints.md}) {
+    padding: ${theme.spacing.md};
+    text-align: center;
   }
 `;
 
@@ -65,6 +80,14 @@ const Title = styled.h1`
   line-height: 1.1;
   letter-spacing: -0.02em;
   white-space: nowrap;
+
+  // Ajuste para mobile
+  @media (max-width: ${theme.breakpoints.sm}) {
+    font-size: 2rem;
+    white-space: normal;
+    word-break: break-word;
+    text-align: center;
+  }
 `;
 
 const Subtitle = styled.h2`
@@ -74,6 +97,10 @@ const Subtitle = styled.h2`
   margin-bottom: ${theme.spacing.lg};
   opacity: 0.9;
   font-weight: 500;
+
+  @media (max-width: ${theme.breakpoints.sm}) {
+    font-size: 1.2rem;
+  }
 `;
 
 const Description = styled.p`
@@ -84,6 +111,11 @@ const Description = styled.p`
   margin-bottom: ${theme.spacing.xl};
   opacity: 0.8;
   line-height: 1.7;
+
+  @media (max-width: ${theme.breakpoints.sm}) {
+    font-size: 1rem;
+    margin-bottom: ${theme.spacing.lg};
+  }
 `;
 
 const SocialLinks = styled.div`
@@ -118,6 +150,15 @@ const SocialLinks = styled.div`
       font-size: 1.75rem;
     }
   }
+
+  // Centrar y ajustar tamaño en mobile
+  @media (max-width: ${theme.breakpoints.md}) {
+    justify-content: center;
+    gap: ${theme.spacing.sm};
+    a {
+      font-size: 1.3rem;
+    }
+  }
 `;
 
 export const Hero = () => {
@@ -127,21 +168,22 @@ export const Hero = () => {
         <HeroContent>
           <div>
             <Title role="heading" aria-level={2}>
-              Hi, I'm [Your Name]
+              Hola, soy <br />
+              <span>[Alexander Rubilar]</span>
             </Title>
             <Subtitle role="heading" aria-level={3}>
-              Full Stack Developer
+              Especialista en Ecommerce y SEO
             </Subtitle>
             <Description role="paragraph">
-              I create elegant solutions to complex problems, specializing in modern web development
-              with a focus on user experience and clean code.
+              Creo soluciones integrales para problemas complejos, especializándome en el desarrollo web moderno
+              con un enfoque en la experiencia del usuario y el código limpio.
             </Description>
             <SocialLinks role="list" aria-label="Social media links">
               <a 
-                href="https://github.com" 
+                href="https://github.com/alectrlsuprcl" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                aria-label="Visit my GitHub profile"
+                aria-label="Visita mi perfil enGitHub"
                 role="listitem"
               >
                 <Suspense fallback={<div style={{ width: '1.5rem', height: '1.5rem' }} />}>
@@ -150,10 +192,10 @@ export const Hero = () => {
                 <span className="sr-only">GitHub</span>
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://cl.linkedin.com/in/alexander-rubilar" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                aria-label="Visit my LinkedIn profile"
+                aria-label="Visita mi perfil en LinkedIn"
                 role="listitem"
               >
                 <Suspense fallback={<div style={{ width: '1.5rem', height: '1.5rem' }} />}>
@@ -162,8 +204,8 @@ export const Hero = () => {
                 <span className="sr-only">LinkedIn</span>
               </a>
               <a 
-                href="mailto:your.email@example.com"
-                aria-label="Send me an email"
+                href="mailto:alexanderubilar@gmail.com"
+                aria-label="Enviame un email"
                 role="listitem"
               >
                 <Suspense fallback={<div style={{ width: '1.5rem', height: '1.5rem' }} />}>
@@ -177,4 +219,4 @@ export const Hero = () => {
       </div>
     </HeroSection>
   );
-};
+  };

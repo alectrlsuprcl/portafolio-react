@@ -5,6 +5,7 @@ import { GlobalStyles } from './styles/GlobalStyles';
 import { ThemeProvider } from '@emotion/react';
 import { theme } from './styles/theme';
 import styled from '@emotion/styled';
+import { WeatherWidget } from './components/widgets/WeatherWidget';
 
 // Lazy load non-critical components
 const Projects = lazy(() => import('./components/sections/Projects'));
@@ -27,6 +28,14 @@ const LoadingFallback = styled.div`
   }
 `;
 
+const WeatherWidgetWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0 1.5rem 0;
+  width: 100%;
+`;
+
 function App() {
   return (
     <ThemeProvider theme={theme}>
@@ -34,7 +43,7 @@ function App() {
       <Layout>
         {/* Hero section is critical for LCP, so keep it eager loaded */}
         <Hero />
-        
+
         {/* Wrap non-critical sections in Suspense */}
         <Suspense fallback={<LoadingFallback>Loading projects...</LoadingFallback>}>
           <Projects />
@@ -45,6 +54,10 @@ function App() {
         <Suspense fallback={<LoadingFallback>Loading contact...</LoadingFallback>}>
           <Contact />
         </Suspense>
+                {/* Widget del clima entre Contacto y Footer */}
+        <WeatherWidgetWrapper>
+          <WeatherWidget />
+        </WeatherWidgetWrapper>
       </Layout>
     </ThemeProvider>
   );

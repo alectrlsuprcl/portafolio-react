@@ -88,6 +88,12 @@ const Nav = styled.nav`
     max-width: 1200px;
     margin: 0 auto;
     width: 90%;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
   }
 `;
 
@@ -189,13 +195,13 @@ export const Layout = ({ children }: LayoutProps) => {
               role="heading"
               aria-level={1}
             >
-              Portfolio
+              ARM
             </Logo>
             <NavLinks role="list">
-              <a href="#about" role="listitem" aria-label="About section">About</a>
-              <a href="#projects" role="listitem" aria-label="Projects section">Projects</a>
-              <a href="#skills" role="listitem" aria-label="Skills section">Skills</a>
-              <a href="#contact" role="listitem" aria-label="Contact section">Contact</a>
+              <a href="#about" role="listitem" aria-label="About section">Sobre mí</a>
+              <a href="#projects" role="listitem" aria-label="Projects section">Proyectos</a>
+              <a href="#skills" role="listitem" aria-label="Skills section">Habilidades</a>
+              <a href="#contact" role="listitem" aria-label="Contact section">Contacto</a>
             </NavLinks>
           </div>
         </Nav>
@@ -206,7 +212,7 @@ export const Layout = ({ children }: LayoutProps) => {
       <FloatingNav />
       <Footer role="contentinfo">
         <div className="container">
-          <p>© {new Date().getFullYear()} Your Name. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Alexander Rubilar Maichil. Todos los derechos reservados.</p>
         </div>
       </Footer>
     </LayoutWrapper>

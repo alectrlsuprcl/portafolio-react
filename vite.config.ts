@@ -12,18 +12,18 @@ export default defineConfig({
         plugins: ['@emotion/babel-plugin']
       }
     }),
-    compression({
-      algorithm: 'brotliCompress',
-      ext: '.br',
-      threshold: 512,
-      compressionOptions: { level: 11 }
-    }),
-    compression({
-      algorithm: 'gzip',
-      ext: '.gz',
-      threshold: 512,
-      compressionOptions: { level: 9 }
-    }),
+    // compression({
+//   algorithm: 'brotliCompress',
+//   ext: '.br',
+//   threshold: 512,
+//   compressionOptions: { level: 11 }
+// }),
+// compression({
+//   algorithm: 'gzip',
+//   ext: '.gz',
+//   threshold: 512,
+//   compressionOptions: { level: 9 }
+// }),
     visualizer({
       open: true,
       gzipSize: true,

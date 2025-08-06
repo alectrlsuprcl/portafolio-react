@@ -1,6 +1,5 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-// import compression from 'vite-plugin-compression'
 import { visualizer } from 'rollup-plugin-visualizer'
 
 // https://vitejs.dev/config/ ojo con esto
@@ -12,18 +11,6 @@ export default defineConfig({
         plugins: ['@emotion/babel-plugin']
       }
     }),
-    // compression({
-//   algorithm: 'brotliCompress',
-//   ext: '.br',
-//   threshold: 512,
-//   compressionOptions: { level: 11 }
-// }),
-// compression({
-//   algorithm: 'gzip',
-//   ext: '.gz',
-//   threshold: 512,
-//   compressionOptions: { level: 9 }
-// }),
     visualizer({
       open: true,
       gzipSize: true,

@@ -1,138 +1,138 @@
 
 # Demo 
-https://simplec0de.github.io/portfolio-01/
+https://alectrlsuprcl.github.io/portafolio-react/
 
-# Modern Portfolio Template
+# Plantilla Moderna de Portafolio
+Una plantilla moderna y responsiva para portafolio, construida con React, TypeScript y Vite. Incluye animaciones fluidas, rendimiento optimizado y un diseño centrado en la accesibilidad.
+git 
+## 🚀 Características
 
-A modern, responsive portfolio template built with React, TypeScript, and Vite. Features smooth animations, optimized performance, and accessibility-first design.
+- **Stack Tecnológico Moderno**: React 19, TypeScript, Vite 6
+- **Estilizado con Emotion**: Utiliza `@emotion/styled` para estilos basados en componentes
+- **Animaciones Suaves**: Impulsadas por Framer Motion
+- **Rendimiento Optimizado**:
+   - División automática de código
+   - Compresión Brotli y Gzip
+   - Componentes cargados de forma perezosa
+   - Visualización del tamaño del bundle
+- **Totalmente Responsivo**: Funciona perfectamente en todos los dispositivos
+- **Accesibilidad**: Etiquetas ARIA y HTML semántico
+- **Modo Oscuro Listo**: Soporte de temas integrado
 
-## 🚀 Features
+## 🛠️ Instalación
 
-- **Modern Tech Stack**: React 19, TypeScript, Vite 6
-- **Styled with Emotion**: Utilizes `@emotion/styled` for component-based styling
-- **Smooth Animations**: Powered by Framer Motion
-- **Optimized Performance**:
-  - Automatic code splitting
-  - Brotli & Gzip compression
-  - Lazy-loaded components
-  - Bundle size visualization
-- **Fully Responsive**: Works seamlessly on all devices
-- **Accessibility**: ARIA labels and semantic HTML
-- **Dark Mode Ready**: Built-in theming support
-
-## 🛠️ Installation
-
-1. Clone the repository:
+1. Clona el repositorio:
 ```bash
 git clone https://github.com/simpleC0de/portfolio-01.git
 cd portfolio-01
 ```
 
-2. Install dependencies:
+2. Instala las dependencias:
 ```bash
 npm install
 ```
 
-3. Start the development server:
+3. Inicia el servidor de desarrollo:
 ```bash
 npm run dev
 ```
 
-## 📝 Customization
+## 📝 Personalización
 
-### Personal Information
-Edit the following files to customize your portfolio:
+### Información Personal
+Edita los siguientes archivos para personalizar tu portafolio:
 
 1. `src/components/sections/Hero.tsx`:
-   - Update your name, title, and description
-   - Modify social media links
+    - Actualiza tu nombre, título y descripción
+    - Modifica los enlaces de redes sociales
 
 2. `src/components/sections/Projects.tsx`:
-   - Add your projects and their details
+    - Agrega tus proyectos y sus detalles
 
 3. `src/components/sections/Skills.tsx`:
-   - Update your skills and expertise
+    - Actualiza tus habilidades y experiencia
 
 4. `src/components/sections/Contact.tsx`:
-   - Customize contact information
+    - Personaliza la información de contacto
 
-### Styling
-- Theme customization: `src/styles/theme.ts`
-- Global styles: `src/styles/GlobalStyles.tsx`
+### Estilos
+- Personalización de tema: `src/styles/theme.ts`
+- Estilos globales: `src/styles/GlobalStyles.tsx`
 
-## 🚀 Deployment
+## 🚀 Despliegue
 
-This template is configured for GitHub Pages deployment by default. The `vite.config.ts` is set up with:
+Esta plantilla está configurada para desplegarse en GitHub Pages por defecto. El archivo `vite.config.ts` está configurado con:
 ```typescript
-base: '/portfolio-01/'  // Change this to your repo name
+base: '/portfolio-01/'  // Cambia esto por el nombre de tu repositorio
 ```
 
-To deploy:
+Para desplegar:
 
-1. Update the `base` in `vite.config.ts` to match your repository name:
+1. Actualiza el `base` en `vite.config.ts` para que coincida con el nombre de tu repositorio:
 ```typescript
-base: '/your-repo-name/'
+base: '/nombre-de-tu-repo/'
 ```
 
-2. Build the project:
+2. Construye el proyecto:
 ```bash
 npm run build
 ```
 
-3. Deploy to GitHub Pages:
-   - Push to your GitHub repository
-   - Enable GitHub Pages in repository settings
-   - Select the `gh-pages` branch as source
+3. Despliega en GitHub Pages:
+    - Haz push a tu repositorio en GitHub
+    - Habilita GitHub Pages en la configuración del repositorio
+    - Selecciona la rama `gh-pages` como fuente
 
-### Alternative Deployment
+### Despliegue Alternativo
 
-For other platforms (Vercel, Netlify, etc.):
-1. Remove or update the `base` property in `vite.config.ts`
-2. Follow the platform-specific deployment instructions
+Para otras plataformas (Vercel, Netlify, etc.):
+1. Elimina o actualiza la propiedad `base` en `vite.config.ts`
+2. Sigue las instrucciones específicas de la plataforma
 
-## ⚙️ Development Features
+## ⚙️ Características de Desarrollo
 
-### Build Optimization
+### Optimización de Build
 
-The project includes several optimization features:
+El proyecto incluye varias características de optimización:
 
-- **Code Splitting**: Vendor chunks are automatically separated
+- **División de Código**: Los paquetes de proveedores se separan automáticamente
 ```typescript
 manualChunks: {
-  vendor: ['react', 'react-dom', 'framer-motion', '@emotion/react', '@emotion/styled'],
-  icons: ['react-icons']
+   vendor: ['react', 'react-dom', 'framer-motion', '@emotion/react', '@emotion/styled'],
+   icons: ['react-icons']
 }
 ```
 
-- **Compression**: Both Brotli and Gzip compression are enabled
-  - Brotli: Level 11 compression
-  - Gzip: Level 9 compression
-  - Threshold: 512 bytes
+- **Compresión**: Brotli y Gzip habilitados
+   - Brotli: Compresión nivel 11
+   - Gzip: Compresión nivel 9
+   - Umbral: 512 bytes
 
-- **Bundle Analysis**: Visualize your bundle size
+- **Análisis de Bundle**: Visualiza el tamaño de tu bundle
 ```bash
 npm run build
-# Opens bundle analysis in browser automatically
+# Abre el análisis del bundle automáticamente en el navegador
 ```
 
-### Performance Monitoring
+### Monitoreo de Rendimiento
 
-- Bundle size visualization with `rollup-plugin-visualizer`
-- Compressed size reporting
-- Chunk size warnings (limit: 1000kb)
+- Visualización del tamaño del bundle con `rollup-plugin-visualizer`
+- Reporte de tamaño comprimido
+- Advertencias por tamaño de chunk (límite: 1000kb)
 
-## 📦 Available Scripts
+## 📦 Scripts Disponibles
 
-- `npm run dev`: Start development server
-- `npm run build`: Build for production
-- `npm run preview`: Preview production build
-- `npm run lint`: Lint code
+- `npm run dev`: Inicia el servidor de desarrollo
+- `npm run build`: Construye para producción
+- `npm run preview`: Previsualiza el build de producción
+- `npm run lint`: Lint del código
 
-## 🔧 System Requirements
+## 🔧 Requisitos del Sistema
 
 - Node.js 18+
 - npm 7+
 
-## 📄 License
+## 📄 Licencia
 
-MIT License - feel free to use this template for your portfolio!
+Licencia MIT - ¡siéntete libre de usar esta plantilla para tu portafolio!
+
